@@ -1,0 +1,49 @@
+.post-object-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    margin: 5px 10px 10px 10px;
+    width: 75vw;
+}
+
+.post-title-and-delete-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsteelblue;
+  
+}
+
+.post-title {
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 10px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.post-delete-button {
+    position: absolute;
+    right: 8px;
+    padding: 3px;
+    border: none;
+    background-color: lightsteelblue;
+    
+}
+
+.fa-trash {
+    font-size: large;
+}
+.post-thought-container {
+    display: flex;
+    justify-content: center;
+}
+
+.post-thought {
+    font-size: x-large;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+
+}

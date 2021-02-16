@@ -1,0 +1,34 @@
+.post-add-form-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Dosis', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-add-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.post-add-button {
+    background-color: lightsteelblue;
+    padding: 5px;
+    font-size: large;
+    margin: 10px 0px 10px 0px;
+}
+
+.post-add-form-label {
+    padding: 5px 0px 5px 0px;
+}
+
+.post-add-form-input {
+    padding: 5px;
+    font-size: large;
+}
