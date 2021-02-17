@@ -11,6 +11,7 @@ import { Post } from '../interfaces/post';
 export class PostFormComponent implements OnInit {
 
 @Output() submitted = new EventEmitter<Post>();
+  showForm: boolean = true;
 
   constructor() { }
 
@@ -18,11 +19,14 @@ export class PostFormComponent implements OnInit {
   }
 
 
-  submitPost = (form: NgForm) => {
+  submitPost = (form: NgForm):void => {
     let newPost: Post = {
       title: form.form.value.title,
       thought: form.form.value.thought
     }
     this.submitted.emit(newPost)
+  }
+  toggleForm = () => {
+    this.showForm = !this.showForm;
   }
 }

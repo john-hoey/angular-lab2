@@ -7,7 +7,7 @@ import { Post } from '../interfaces/post';
   styleUrls: ['./social-posts.component.css']
 })
 export class SocialPostsComponent implements OnInit {
-
+showForm: boolean = false;
 
   myPosts: Post[] = [
     {
@@ -35,6 +35,11 @@ export class SocialPostsComponent implements OnInit {
   }
 
   onSubmit = (post: Post): void => {
-    this.myPosts.unshift(post)
+    this.myPosts.push(post)
+    this.toggleForm();
+  }
+
+  toggleForm = () => {
+    this.showForm = !this.showForm;
   }
 }

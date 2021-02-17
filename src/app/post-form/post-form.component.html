@@ -1,4 +1,5 @@
 <div class="post-add-form-container">
+    <button class="post-toggle-button" (click)="toggleForm()">X</button>
 <form class="post-add-form" #addForm="ngForm" (ngSubmit)="submitPost(addForm)">
     <label class="post-add-form-label" for="title">Title</label>
     <input class="post-add-form-input" type="text" name="title" id="title" ngModel>

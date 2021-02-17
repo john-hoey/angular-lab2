@@ -9,7 +9,7 @@ import { Post } from '../interfaces/post';
 })
 export class PostComponent implements OnInit {
 
-@Input() postObject: Post | undefined;
+@Input() postObject!: Post;
 @Output() deleted = new EventEmitter<void>();
   
 

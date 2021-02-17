@@ -1,4 +1,7 @@
-<app-post-form (submitted)="onSubmit($event)"></app-post-form>
-<ul>
+<div class="show-form-button-container">
+<button class="show-form-button" (click)="toggleForm()" *ngIf="!showForm">Create a Post</button>
+</div>
+<app-post-form (submitted)="onSubmit($event)" *ngIf="showForm"></app-post-form>
+<ol class="post-list-container">
 <app-post *ngFor="let post of myPosts; index as i" [postObject]="post" (deleted)="onDelete(i)"></app-post>
-</ul>
+</ol>
